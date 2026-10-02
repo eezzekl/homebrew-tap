@@ -5,21 +5,21 @@
 class SkillSync < Formula
   desc "Synchronizes AI agent skills across tool directories (Claude, Cursor, OpenCode, etc.)"
   homepage "https://github.com/eezzekl/skill-sync"
-  version "0.2.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eezzekl/skill-sync/releases/download/v0.2.0/skill-sync_0.2.0_darwin_amd64.tar.gz"
-      sha256 "4821c5df3821042d95f2a02475b8062fc3b69a96b1b2540d0b194cd0cead14cb"
+      url "https://github.com/eezzekl/skill-sync/releases/download/v1.1.0/skill-sync_1.1.0_darwin_amd64.tar.gz"
+      sha256 "e7e247a6ac51dddf1378db0063f69d539f543c9bbca1a5c9020948910dc75c09"
 
       define_method(:install) do
         bin.install "skill-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eezzekl/skill-sync/releases/download/v0.2.0/skill-sync_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6b5799dc1a84d99a2ad30e268e21a972c0296e72fc051328b045eef07a91120f"
+      url "https://github.com/eezzekl/skill-sync/releases/download/v1.1.0/skill-sync_1.1.0_darwin_arm64.tar.gz"
+      sha256 "95a8b44208acde95b656f007cae50d654ffb701fdde67601224b0bad7d4fcc6c"
 
       define_method(:install) do
         bin.install "skill-sync"
@@ -29,15 +29,15 @@ class SkillSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eezzekl/skill-sync/releases/download/v0.2.0/skill-sync_0.2.0_linux_amd64.tar.gz"
-      sha256 "260bd83c480a988077a88962931dec41411da58d6cf9a273997b279f3904acff"
+      url "https://github.com/eezzekl/skill-sync/releases/download/v1.1.0/skill-sync_1.1.0_linux_amd64.tar.gz"
+      sha256 "4183a9216baf35ca36c85576362dd003ea6ece5e26c0ceee994f09338fe97e3a"
       define_method(:install) do
         bin.install "skill-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/eezzekl/skill-sync/releases/download/v0.2.0/skill-sync_0.2.0_linux_arm64.tar.gz"
-      sha256 "077d41a81947f8919abf654e9b88a5161699b67cd985d7033bbc19371e2af329"
+      url "https://github.com/eezzekl/skill-sync/releases/download/v1.1.0/skill-sync_1.1.0_linux_arm64.tar.gz"
+      sha256 "d01caa3f36b41afc6fb7fedd51d4abc358164ae5d5bcea59f69dd1d8fd4bed5b"
       define_method(:install) do
         bin.install "skill-sync"
       end
